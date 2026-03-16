@@ -53,9 +53,17 @@
                 contribute my experience and skills to
                 support the growth and success of the
                 business.</p>
-            <button>
+            <button onclick="document.getElementById('myModal').showModal()">
                 click
             </button>
+            <dialog id="myModal">
+                <h3>My Goals</h3>
+                <p>ငါကြိုးစားနေပါတယ်
+                </p>
+                <button onclick="document.getElementById('myModal').close()">
+                    Close
+                </button>
+            </dialog>
         </div>
     </section>
     <section class="love-story" id="love-story">

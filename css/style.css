@@ -61,6 +61,21 @@ nav {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+/* modal section  */
+#myModal {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 500px;
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
+#myModal::backdrop {
+  background-color: #56585887;
+}
 .navbar-section div {
   width: 200px;
   /* height: 400px; */
