@@ -26,7 +26,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   z-index: 1000;
   position: fixed;
   top: 0%;
@@ -37,9 +37,10 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+
 .nav-links a {
   background-color: var(--main-color);
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   margin: 0 1rem;
   border-radius: 0.4rem;
   color: var(--white-color);
@@ -67,11 +68,12 @@ nav {
   border: none;
   border-radius: 8px;
   padding: 1.5rem;
-  width: 90%;
+  width: 80%;
   text-align: center;
   position: fixed;
-  top: 30%;
-  left: 5%;
+  top: 20%;
+  left: 10%;
+  transition: 0.5s;
 }
 #myModal::backdrop {
   background-color: #56585887;
@@ -121,9 +123,9 @@ nav {
 /* section A  */
 .love-story {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-color);
-  padding: 2rem;
+  padding: 1.2rem 5rem;
   background-attachment: fixed;
 }
 .love-story h2 {
@@ -135,27 +137,43 @@ nav {
   /* background: red; */
   font-weight: var(--font-weight);
 }
-.skills-hobbies {
+.skills {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
   padding: 2rem;
 }
-.skills-hobbies h2 {
+.skills h2 {
   width: 100%;
   text-align: center;
   font-family: var(--font-family);
   text-transform: capitalize;
   padding: 2rem 0;
   /* background: red; */
+  font-weight: var(--font-weight);
 }
 .familygallery {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 .familygallery h2 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+  padding: 2rem 0;
+  /* background: red; */
+  font-weight: var(--font-weight);
+}
+.hobbies {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  padding: 2rem;
+}
+.hobbies h2 {
   width: 100%;
   text-align: center;
   font-family: var(--font-family);
