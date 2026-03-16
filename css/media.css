@@ -15,9 +15,9 @@
   #nav-links {
     display: block;
     position: absolute;
-    top: 8.5%;
+    top: 100%;
     left: 0;
-    background-color: #424343;
+    background-color: #424343c7;
     padding: 0.5rem;
     width: 100%;
     /* transform: translateX(-150%); */
