@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .nav {
     z-index: 1000;
   }
@@ -6,7 +6,7 @@
     display: block;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
