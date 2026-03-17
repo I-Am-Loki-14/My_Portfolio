@@ -249,7 +249,7 @@ nav {
   /* height: 600px; */
   background-color: var(--bg-color);
   /* background-color: red; */
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 .familygallery h2 {
   width: 100%;
@@ -258,7 +258,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: end;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-family: var(--font-family);
   text-transform: capitalize;
   /* background: red; */
