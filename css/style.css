@@ -78,6 +78,37 @@ nav {
 #myModal::backdrop {
   background-color: #56585887;
 }
+#menu-bar {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transition: 0.5s;
+}
+#menu-bar::backdrop {
+  background-color: #565858aa;
+}
+#menu-bar li {
+  width: 100%;
+  background-color: var(--main-color);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--white-color);
+  text-align: start;
+  align-items: center;
+}
+#menu-bar li a {
+  display: block;
+  width: 100%;
+  /* background-color: #feb05d; */
+}
+
 .navbar-section div {
   width: 200px;
   /* height: 400px; */
@@ -123,26 +154,38 @@ nav {
 /* section A  */
 .love-story {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--bg-color);
   /* background-color: #5a7acd; */
-  padding: 3rem 2rem;
+  padding: 0rem 2rem;
   background-attachment: fixed;
 }
 .love-story h2 {
   width: 100%;
+  height: 80px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 1rem;
   font-family: var(--font-family);
   text-transform: capitalize;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   /* background: red; */
   font-weight: var(--font-weight);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 .skills {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-color);
   padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .skills h2 {
   width: 100%;
@@ -152,21 +195,75 @@ nav {
   padding: 2rem 0;
   /* background: red; */
   font-weight: var(--font-weight);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+/* skill dialoag  */
+#html {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  transition: 0.5s;
+  line-height: 2.5rem;
+}
+#html::backdrop {
+  background-color: #56585887;
+}
+#css {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  transition: 0.5s;
+  line-height: 2.5rem;
+}
+#css::backdrop {
+  background-color: #56585887;
+}
+#javascript {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  transition: 0.5s;
+  line-height: 2.5rem;
+}
+#javascript::backdrop {
+  background-color: #56585887;
 }
 .familygallery {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--bg-color);
   padding: 3rem 1rem;
 }
 .familygallery h2 {
   width: 100%;
+  height: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 0.5rem;
   font-family: var(--font-family);
   text-transform: capitalize;
-  padding: 2rem 0;
   /* background: red; */
   font-weight: var(--font-weight);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 .hobbies {
   width: 100%;
@@ -182,4 +279,6 @@ nav {
   padding: 2rem 0;
   /* background: red; */
   font-weight: var(--font-weight);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Only For You</title>
-    <!-- <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -21,11 +21,29 @@
     <section class="navbar-section" id="navbar-section">
         <nav>
             <h2 style="text-transform: capitalize;font-weight:bold;">min naing oo</h2>
-            <ul class="menu-bar" id="menu-bar">
+            <ul class="menu-bar" onclick="document.getElementById('menu-bar').showModal()">
                 <li><a href="###"><i class="fa-solid fa-bars-staggered"
                             style="color: rgb(12, 12, 12);font-size: 1.5rem"></i></a>
                 </li>
             </ul>
+            <dialog id="menu-bar">
+                <li><a href="#navbar-section">About Me</a></li>
+                <li><a href="#love-story">Love Story</a></li>
+                <li><a href="#familygallery">Family Gallery</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <button onclick="document.getElementById('menu-bar').close()" style="width: 100px;
+  padding: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+  color: var(--white-color);
+  cursor: pointer;margin: 1rem;">
+                    <i class="fa-solid fa-circle-xmark" style="color: rgb(254, 254, 254);font-size: 25px;"></i>
+                </button>
+            </dialog>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#navbar-section">About Me</a></li>
                 <li><a href="#love-story">Love Story</a></li>
@@ -81,17 +99,17 @@
 
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./img/bora-bora-3023437_1920.jpg"
+                    <img src="./img/html.jpg"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./img/bora-bora-3023437_1920.jpg"
+                    <img src="./img/css.jpg"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./img/bora-bora-3023437_1920.jpg"
+                    <img src="./img/javascript.jpg"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
@@ -177,10 +195,179 @@
 
 
     </section>
+    <!-- skills section start -->
     <section class="skills" id="skills">
         <h2>This is my skills</h2>
+        <div class="bg-neutral-primary-soft block border border-default rounded-base shadow-xs"
+            style="padding: 1rem;border-radius: 0.5rem;width: 350px;">
+            <a href="###">
+                <img style="border-radius: 0.5rem;" class="rounded-base" src="./img/html.jpg" alt="" />
+            </a>
+            <a href="#">
+                <h5 class="tracking-tight text-heading"
+                    style="font-family: var(--font-family);font-weight: var(--font-weight) ;margin: 0.5rem 0; font-size: 1.5rem;text-transform: capitalize;">
+                    This is my html
+                </h5>
+            </a>
+            <p class="mb-6 text-body" style="font-family: var(--font-family);margin: 0.5rem 0;">In today’s fast-paced
+                digital landscape,
+                fostering seamless collaboration among
+                Developers
+                and IT Operations.</p>
+
+            <button style="width: 100px;
+  padding: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+  color: var(--white-color);
+  cursor: pointer;margin: 0.5rem 0rem;" onclick="document.getElementById('html').showModal()">
+                HTML
+            </button>
+            <!-- Modal  -->
+            <dialog id="html">
+                <h2>My Html !!!</h2>
+                <p style="font-family: var(--font-family);">Think of HTML (HyperText Markup Language) as the skeleton of
+                    a webpage. It isn’t a programming
+                    language that handles
+                    logic (like math or "if-then" statements); rather, it’s a markup language that tells a web browser
+                    how to structure
+                    content.
+                </p>
+                <p style="font-family: var(--font-family);font-weight: 700;">Great Power , Come Great Responsibility!
+                </p>
+                <button onclick="document.getElementById('html').close()" style=" padding: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+  color: var(--white-color);
+  cursor: pointer;margin: 0.5rem 0rem;
+  width: 100px;padding: 0.1rem 1.5rem;">
+                    Close
+                </button>
+            </dialog>
+            <!-- Modal  -->
+
+        </div>
+        <div class="bg-neutral-primary-soft block border border-default rounded-base shadow-xs"
+            style="padding: 1rem;border-radius: 0.5rem;width: 350px;">
+            <a href="###">
+                <img style="border-radius: 0.5rem;" class="rounded-base" src="./img/css.jpg" alt="" />
+            </a>
+            <a href="#">
+                <h5 class="tracking-tight text-heading"
+                    style="font-family: var(--font-family);font-weight: var(--font-weight) ;margin: 0.5rem 0; font-size: 1.5rem;text-transform: capitalize;">
+                    This is my css
+                </h5>
+            </a>
+            <p class="mb-6 text-body" style="font-family: var(--font-family);margin: 0.5rem 0;">In today’s fast-paced
+                digital landscape,
+                fostering seamless collaboration among
+                Developers
+                and IT Operations.</p>
+
+            <button style="width: 100px;
+          padding: 0.5rem;
+          font-family: var(--font-family);
+          font-weight: 800;
+          border-radius: 0.5rem;
+          background-color: var(--main-color);
+          text-transform: uppercase;
+          color: var(--white-color);
+          cursor: pointer;margin: 0.5rem 0rem;" onclick="document.getElementById('css').showModal()">
+                Css
+            </button>
+            <!-- Modal  -->
+            <dialog id="css">
+                <h2>My Css !!!</h2>
+                <p style="font-family: var(--font-family); ">If HTML is the skeleton of a webpage, CSS (Cascading Style
+                    Sheets) is the wardrobe, the makeup, and
+                    the interior design.
+                    It’s the language we use to tell the browser exactly how those HTML elements should look.
+
+                    Without CSS, every website would look like a black-and-white legal document from 1992.
+                </p>
+                <p style="font-family: var(--font-family);font-weight: 700;">Great Power , Come Great Responsibility!
+                </p>
+                <button onclick="document.getElementById('css').close()" style=" padding: 0.5rem;
+          font-family: var(--font-family);
+          font-weight: 800;
+          border-radius: 0.5rem;
+          background-color: var(--main-color);
+          text-transform: uppercase;
+          color: var(--white-color);
+          cursor: pointer;margin: 0.5rem 0rem;
+          width: 100px;padding: 0.1rem 1.5rem;">
+                    Close
+                </button>
+            </dialog>
+            <!-- Modal  -->
+
+        </div>
+        <div class="bg-neutral-primary-soft block border border-default rounded-base shadow-xs"
+            style="padding: 1rem;border-radius: 0.5rem;width: 350px;">
+            <a href="###">
+                <img style="border-radius: 0.5rem;" class="rounded-base" src="./img/html.jpg" alt="" />
+            </a>
+            <a href="#">
+                <h5 class="tracking-tight text-heading"
+                    style="font-family: var(--font-family);font-weight: var(--font-weight) ;margin: 0.5rem 0; font-size: 1.5rem;text-transform: capitalize;">
+                    This is my javascript
+                </h5>
+            </a>
+            <p class="mb-6 text-body" style="font-family: var(--font-family);margin: 0.5rem 0;">In today’s fast-paced
+                digital landscape,
+                fostering seamless collaboration among
+                Developers
+                and IT Operations.</p>
+
+            <button style="
+          padding: 0.5rem;
+          font-family: var(--font-family);
+          font-weight: 800;
+          border-radius: 0.5rem;
+          background-color: var(--main-color);
+          text-transform: uppercase;
+          color: var(--white-color);
+          cursor: pointer;margin: 0.5rem 0rem;" onclick="document.getElementById('javascript').showModal()">
+                Javascript
+            </button>
+            <!-- Modal  -->
+            <dialog id="javascript">
+                <h2>My Javascript!!!</h2>
+                <p style="font-family: var(--font-family);">If HTML is the skeleton and CSS is the skin, JavaScript (JS)
+                    is the nervous system. It’s a full-fledged programming
+                    language that makes webpages interactive and alive.
+
+                    Without JavaScript, a website is just a static poster. With it, a website becomes an application.
+                </p>
+
+                <p style="font-family: var(--font-family);font-weight: 700;">Great Power , Come Great Responsibility!
+                </p>
+                <button onclick="document.getElementById('javascript').close()" style=" padding: 0.5rem;
+          font-family: var(--font-family);
+          font-weight: 800;
+          border-radius: 0.5rem;
+          background-color: var(--main-color);
+          text-transform: uppercase;
+          color: var(--white-color);
+          cursor: pointer;margin: 0.5rem 0rem;
+          width: 100px;padding: 0.1rem 1.5rem;">
+                    Close
+                </button>
+            </dialog>
+            <!-- Modal  -->
+
+        </div>
+
+
 
     </section>
+    <!-- section skill end  -->
     <section class="hobbies" id="hobbies">
         <h2>This is my hobbies</h2>
 
