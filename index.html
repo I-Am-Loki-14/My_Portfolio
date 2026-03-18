@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <script src="./js/javascript.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
 
@@ -378,8 +379,22 @@
     </section>
 
     <!-- footer section  -->
-    <section class="backgroun-theme-sound" id="backgroun-theme-sound">
-        <audio src="./mp3/Yiruma - River Flows in You-compress.mp3" loop controls autoplay></audio>
+    <section class="footer" id="footer">
+        <div class="backgroun-theme-sound">
+            <audio src="./mp3/Yiruma - River Flows in You-compress.mp3" loop controls autoplay muted></audio>
+        </div>
+        <div class="show-photo">
+            <span id="display-area"
+                style="width: 300px;height: 210px;border: 1px solid #222;display: block;padding: 0.5rem;">
+                <img src="./img/css.jpg" alt="" style="width: 100%;">
+            </span>
+            <div class="thumb-photo">
+                <img src="./img/html.jpg" alt="" onclick="sentToSpan(this)"
+                    style="width: 100px;height: 100%;cursor: pointer;outline-style: double;outline-color: red;">
+                <img src="./img/css.jpg" alt="" onclick="sentToSpan(this)" style="width: 100px;cursor: pointer;">
+                <img src="./img/javascript.jpg" alt="" onclick="sentToSpan(this)" style="width: 100px;cursor: pointer;">
+            </div>
+        </div>
     </section>
 
 </body>
